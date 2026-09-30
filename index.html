@@ -254,8 +254,6 @@ tfoot td{font-weight:700;border-bottom:none;border-top:1px solid var(--muted)}
 .score{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px}
 .score b{font-family:'Jost',sans-serif;font-size:56px;line-height:.9;color:var(--enabler)}
 .fact-strip.c1{grid-template-columns:1fr}
-.small-good{margin:0;padding-left:18px;font-size:13px;line-height:1.5;color:var(--muted)}
-.small-good li{margin:3px 0}
 @media (max-width:600px){
   .chart .tx,.chart .tv,.chart .tm,.chart .xl,.chart .lv,.chart .bt{font-size:16px}
   .chart .xo{display:none}
@@ -518,8 +516,16 @@ tfoot td{font-weight:700;border-bottom:none;border-top:1px solid var(--muted)}
 </section>
 <section class="on" id="horosho">
   <div class="wrap">
-    <h4 style="font-size:14px;color:var(--muted);font-weight:500;margin-bottom:8px">Справедливости ради — что хорошо</h4>
-    <ul class="small-good"><li>Гео настроено точно: 99% расхода приходится на Казахстан (user_location_view: $2 272 из $2 274, остальное — единичные клики из других стран).</li><li>Автоприменение рекомендаций выключено по всем 26 типам — Google сам ничего не меняет.</li><li>Автопометка включена, условия данных клиентов приняты, GA4-покупка передаёт реальную сумму заказа (~$100–660 за заказ).</li><li>В поисковых кампаниях ключи в основном фразовые и точные (широкое соответствие — только 40 ключей в «Коттеджах»).</li></ul>
+    <div class="section-head reveal">
+      <div class="eyebrow">Справедливости ради</div>
+      <h2>Что хорошо</h2>
+    </div>
+    <div class="group-grid stagger">
+      <div class="group-card"><div class="gname"><i style="background:var(--money)"></i><b>Гео</b></div><p>Настроено точно: 99% расхода приходится на Казахстан ($2&nbsp;272 из $2&nbsp;274), остальное — единичные клики из других стран.</p></div>
+      <div class="group-card"><div class="gname"><i style="background:var(--money)"></i><b>Автоприменение</b></div><p>Выключено по всем 26 типам рекомендаций — Google сам ничего в кабинете не меняет.</p></div>
+      <div class="group-card"><div class="gname"><i style="background:var(--money)"></i><b>Отслеживание покупок</b></div><p>Автопометка включена, условия данных клиентов приняты, GA4-покупка передаёт реальную сумму заказа (~$100–660).</p></div>
+      <div class="group-card"><div class="gname"><i style="background:var(--money)"></i><b>Типы соответствия</b></div><p>Ключи в поиске в основном фразовые и точные; широкое соответствие — только 40 ключей в «Коттеджах».</p></div>
+    </div>
   </div>
 </section>
 <footer>
